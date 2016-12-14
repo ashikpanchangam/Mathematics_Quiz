@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ashikspc.mathematicsquiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".additionScreenActivity"
+            android:label="@string/addQuiz"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".subtractionScreenActivity"
+            android:label="@string/subQuiz"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".scoreActivity"
+            android:label="@string/score"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".multiplicationScreenActivity"
+            android:label="@string/mulQuiz"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_addition_screen"
+    tools:context=".scoreActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/yourScore"
+        android:id="@+id/yourScore"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/okay"
+        android:layout_toStartOf="@+id/okay" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="12"
+        android:id="@+id/finalScore"
+        android:layout_alignTop="@+id/yourScore"
+        android:layout_toRightOf="@+id/yourScore"
+        android:layout_toEndOf="@+id/yourScore"
+        android:layout_marginLeft="5sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Okay"
+        android:id="@+id/okay"
+        android:onClick="okayButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp" />
+</RelativeLayout>
